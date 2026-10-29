@@ -146,6 +146,9 @@
   .sheet ul{list-style:none;margin-top:14px;display:grid;gap:10px}
   .sheet li{font-size:17px;font-weight:700;padding-left:26px;position:relative}
   .sheet li::before{content:"+";position:absolute;left:0;top:-3px;font-family:var(--sans);font-weight:700;font-size:20px;color:var(--yellow)}
+  .sheet .lbl{font-family:var(--sans);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:var(--muted);margin-top:22px}
+  .sheet .lbl + ul{margin-top:10px}
+  .sheet ul.ben li::before{content:"✓";color:var(--pink);font-size:17px;top:0}
   .sheet .q{font-family:var(--sans);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:15px;color:#fff;margin-top:20px;line-height:1.1}
   .sheet .q + p{margin-top:6px}
   .sheet h3 + .q{margin-top:14px}
@@ -243,17 +246,26 @@
 <template id="m-marca">
   <h3>Guia visual da <em>marca</em></h3>
   <p>O direcionamento da sua marca. Se hoje você só tem a logo, a gente monta o resto em volta dela.</p>
+  <div class="lbl">O que você recebe</div>
   <ul><li>Paleta de cores oficial</li><li>Fonte de apoio para usar com a logo</li><li>Orientações de uso</li></ul>
+  <div class="lbl">Por que vale a pena</div>
+  <ul class="ben"><li>Sua marca passa a ser reconhecida em qualquer lugar que aparecer</li><li>Mais profissionalismo, que gera confiança e ajuda a vender</li><li>Fim das decisões no improviso: você sabe qual cor e fonte usar</li><li>Qualquer pessoa que criar algo para você segue o mesmo padrão</li></ul>
 </template>
 <template id="m-pagina">
   <h3>Página de <em>links</em></h3>
   <p>A página que vai na bio do Instagram, estilo Linktree, mas com a identidade da sua marca.</p>
+  <div class="lbl">O que você recebe</div>
   <ul><li>Contatos e WhatsApp em um toque</li><li>Produtos e serviços em destaque</li><li>Redes sociais e links importantes</li></ul>
+  <div class="lbl">Por que vale a pena</div>
+  <ul class="ben"><li>Quem chega no seu perfil encontra tudo em um só lugar</li><li>Menos cliques até o WhatsApp, mais contatos e vendas</li><li>Seu negócio com cara própria, não de modelo genérico</li><li>Um link fácil de mandar e de atualizar sempre que precisar</li></ul>
 </template>
 <template id="m-conteudo">
   <h3>3 conteúdos <em>prontos</em></h3>
   <p>Três peças para o seu perfil, pensadas a partir de pesquisa e do que está em alta no seu mercado.</p>
+  <div class="lbl">O que você recebe</div>
   <ul><li>Post estático, carrossel ou vídeo</li><li>Legenda inclusa</li><li>Tudo já na nova identidade</li></ul>
+  <div class="lbl">Por que vale a pena</div>
+  <ul class="ben"><li>Seu perfil ganha cara nova e mais profissional na hora</li><li>Você sai da paralisia do "o que eu posto?"</li><li>Conteúdo alinhado ao que está em alta, que atrai e engaja</li><li>Uma amostra real de como seria ter o ALL TORAL nas suas redes</li></ul>
 </template>
 <template id="m-como">
   <h3>Como <em>funciona</em></h3>
