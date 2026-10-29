@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ALL START · ALL TORAL</title>
+<meta name="description" content="Oferta exclusiva: marca, página e conteúdo para começar hoje com o ALL TORAL.">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,900&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero-celular.webp" media="(max-width:819px)">
+<link rel="preload" as="image" href="img/hero-desktop.webp" media="(min-width:820px)">
+<style>
+  :root{
+    --bg:#000;
+    --yellow:#fae204;
+    --pink:#e55496;
+    --white:#fff;
+    --muted:rgba(255,255,255,.62);
+    --line:rgba(255,255,255,.12);
+    --hand:'Playfair Display',Georgia,serif;
+    --serif:'Playfair Display',Georgia,serif;
+    --sans:'Inter',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--white);font-family:var(--sans);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;height:auto;display:block}
+  button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 18px;position:relative}
+  .hand{font-family:var(--hand);font-weight:900;line-height:.98;letter-spacing:-.02em;font-variant-numeric:lining-nums}
+  .hand em{font-style:italic;color:var(--yellow);padding-right:.04em}
+  .center{text-align:center}
+  .pk{color:var(--pink)} .yl{color:var(--yellow)}
+
+  /* faixa corrida */
+  .ticker{background:#0a0a0a;color:#fff;overflow:hidden;white-space:nowrap;border-bottom:1px solid var(--pink)}
+  .ticker div{display:inline-block;padding:10px 0;font-family:var(--sans);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:12px;animation:run 24s linear infinite}
+  .ticker span{margin:0 16px}
+  @keyframes run{to{transform:translateX(-50%)}}
+
+  header{padding:16px 0 18px}
+  .brand{display:block;width:max-content;margin:0 auto;font-family:var(--serif);font-weight:700;font-size:14px;line-height:.9;text-align:center}
+
+  /* ===== HERO ===== */
+  .hero{padding:14px 0 30px;text-align:center}
+  .hero h1{font-size:clamp(36px,10.4vw,84px);line-height:1;white-space:nowrap;color:#fff;text-shadow:0 2px 24px rgba(0,0,0,.6)}
+  .hero h1 span{display:block}
+  .art{position:relative;width:min(100vw,560px);margin:10px 0 0;left:50%;translate:-50% 0;container-type:inline-size}
+  .art img{width:100%;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent),linear-gradient(transparent,#000 6%,#000 82%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent),linear-gradient(transparent,#000 6%,#000 82%,transparent);mask-composite:intersect}
+  .price{position:absolute;left:49.5%;top:53.2%;translate:-50% -50%;width:30cqw;display:flex;flex-direction:column;align-items:center;color:#000;animation:beat 1.6s ease-in-out infinite}
+  .price .from{font-family:var(--sans);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:3.4cqw;line-height:1;white-space:nowrap}
+  .price .from s{text-decoration-color:var(--pink);text-decoration-thickness:.5cqw}
+  .price .num{font-family:var(--hand);font-weight:900;font-variant-numeric:lining-nums;font-size:11.6cqw;line-height:1;color:#000;white-space:nowrap;letter-spacing:-.02em}
+  @keyframes beat{50%{scale:1.06}}
+  @media(min-width:820px){
+    .art{width:min(100vw,1040px);margin-top:18px}
+    .art img{-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent),linear-gradient(transparent,#000 12%,#000 80%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent),linear-gradient(transparent,#000 12%,#000 80%,transparent);mask-composite:intersect}
+    .price{left:74.3%;top:41.9%;width:20cqw}
+    .price .from{font-size:2.1cqw}
+    .price .num{font-size:7.8cqw}
+  }
+
+  .pack{font-family:var(--sans);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:clamp(13px,3.6vw,18px);color:#fff;margin-top:6px;white-space:nowrap}
+  .pack i{font-style:normal;color:var(--pink)}
+  .cta{display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:clamp(17px,4.8vw,20px);
+    background:var(--yellow);color:#000;padding:20px 30px 16px;border-radius:18px;margin:22px auto 0;width:100%;max-width:480px;
+    box-shadow:0 8px 0 #a99a00,0 14px 40px rgba(250,226,4,.3);transition:transform .12s,box-shadow .12s;position:relative;overflow:hidden}
+  .cta:active{transform:translateY(6px);box-shadow:0 2px 0 #a99a00}
+  .cta::after{content:"";position:absolute;top:0;bottom:0;width:40%;left:-60%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.65),transparent);animation:shine 2.6s ease-in-out infinite}
+  @keyframes shine{60%,100%{left:130%}}
+  .valid{display:block;margin-top:16px;font-family:var(--sans);font-weight:600;letter-spacing:.14em;font-size:13px;color:var(--muted)}
+  .valid b{color:var(--yellow);font-weight:700}
+
+  /* ===== BLOCOS ===== */
+  section{padding:52px 0}
+  .s-title{font-size:clamp(44px,12vw,76px);color:#fff}
+  .s-title .pk{color:#fff}
+  .panel{background:linear-gradient(160deg,#1a1a1a 0%,#0c0c0c 55%,#050505 100%);border:1px solid var(--line);border-radius:24px;position:relative;overflow:hidden}
+  .panel::before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;filter:blur(90px);background:rgba(255,255,255,.07);top:-260px;left:50%;translate:-50% 0;pointer-events:none}
+  .panel > *{position:relative}
+
+  .items{margin-top:30px;display:grid}
+  @media(min-width:820px){.items{grid-template-columns:repeat(3,1fr)}}
+  .item{padding:30px 20px;text-align:center}
+  .item + .item{border-top:1px solid var(--line)}
+  @media(min-width:820px){.item + .item{border-top:0;border-left:1px solid var(--line)}}
+  .item .n{font-family:var(--sans);font-weight:700;letter-spacing:.2em;font-size:13px;color:var(--pink)}
+  .item .w{font-family:var(--hand);font-weight:900;font-size:clamp(50px,14vw,56px);line-height:1;margin-top:10px}
+  .item .d{font-family:var(--sans);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:13px;color:var(--muted);margin-top:10px}
+  .more{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-family:var(--sans);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:12px;color:#fff;border:1px solid rgba(255,255,255,.35);padding:11px 16px;border-radius:999px}
+  .more::after{content:"+";color:var(--yellow);font-size:16px;line-height:.6}
+
+  .facts{display:grid;grid-template-columns:1fr 1fr;padding:32px 10px 28px;text-align:center}
+  .fact + .fact{border-left:1px solid var(--line)}
+  .fact .big{font-family:var(--hand);font-weight:900;font-variant-numeric:lining-nums;font-size:clamp(76px,22vw,120px);line-height:.9;color:#fff}
+  .fact .cap{font-family:var(--sans);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:clamp(12px,3.4vw,15px);line-height:1.35;margin-top:12px;color:var(--muted)}
+  .facts-more{grid-column:1/-1;margin:22px auto 0}
+
+  /* letreiro final */
+  .final{padding-bottom:130px;text-align:center}
+  .marquee{position:relative;width:min(100vw,760px);left:50%;translate:-50% 0;container-type:inline-size;animation:glow 2.8s ease-in-out infinite}
+  .marquee img{-webkit-mask-image:radial-gradient(ellipse 52% 56% at 50% 50%,#000 70%,transparent 100%);mask-image:radial-gradient(ellipse 52% 56% at 50% 50%,#000 70%,transparent 100%)}
+  @keyframes glow{50%{filter:brightness(1.15)}}
+  .m-txt{position:absolute;left:16%;right:16%;top:24%;bottom:30%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2.4cqw}
+  .m-big{font-size:10cqw;line-height:1;color:#fff;white-space:nowrap}
+  .m-sub{font-family:var(--sans);font-weight:700;letter-spacing:.14em;font-size:2.8cqw;white-space:nowrap;color:var(--muted)}
+  .m-sub b{color:var(--yellow)}
+  .faq-btn{display:block;margin:22px auto 0;font-family:var(--sans);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:13px;color:#fff;border-bottom:1px solid var(--pink);padding-bottom:4px;width:max-content}
+
+  footer{border-top:1px solid var(--line);padding:22px 0 110px;text-align:center;font-family:var(--sans);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:11px;color:var(--muted)}
+
+  /* barra fixa */
+  .sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:20;background:#0b0b0b;border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:8px 8px 8px 16px;display:flex;align-items:center;gap:10px;
+    box-shadow:0 10px 30px rgba(0,0,0,.6);transform:translateY(160%);transition:transform .35s}
+  .sticky.show{transform:none}
+  .sticky .info{flex:1;font-family:var(--sans);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:11px;line-height:1.2;color:var(--muted)}
+  .sticky .info b{display:block;font-family:var(--hand);font-weight:900;font-variant-numeric:lining-nums;letter-spacing:0;font-size:26px;color:#fff}
+  .sticky a{font-family:var(--sans);font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:13px;background:var(--yellow);color:#000;padding:14px 16px 11px;border-radius:12px}
+  @media(min-width:820px){.sticky{display:none}}
+
+  /* pop-up com o selo */
+  .pop-bg{position:fixed;inset:0;z-index:29;background:rgba(0,0,0,.72);backdrop-filter:blur(4px);display:none}
+  .pop{position:fixed;z-index:30;left:50%;top:50%;width:min(88vw,380px);translate:-50% -50%;display:none;text-align:center}
+  .pop.show,.pop-bg.show{display:block}
+  .pop.show{animation:boing .7s cubic-bezier(.3,1.6,.5,1)}
+  @keyframes boing{from{transform:scale(.2) rotate(-25deg);opacity:0}}
+  .pop .seal{animation:wob 2.4s ease-in-out .7s infinite}
+  @keyframes wob{50%{transform:rotate(-3deg) scale(1.03)}}
+  .pop .cta{margin-top:-6px}
+  .pop .x{position:absolute;top:4%;right:4%;width:44px;height:44px;border-radius:50%;background:#000;color:#fff;font-family:var(--sans);font-size:22px;z-index:2;border:1px solid rgba(255,255,255,.4)}
+
+  /* janela "saber mais" */
+  .modal{position:fixed;inset:0;z-index:40;display:none;align-items:flex-end;justify-content:center;background:rgba(0,0,0,.75);backdrop-filter:blur(6px)}
+  .modal.open{display:flex}
+  @media(min-width:700px){.modal{align-items:center}}
+  .sheet{background:linear-gradient(160deg,#1a1a1a,#0b0b0b 60%);border:1px solid rgba(255,255,255,.14);border-top:2px solid var(--pink);border-radius:24px 24px 0 0;max-width:560px;width:100%;max-height:86vh;overflow:auto;padding:28px 22px 30px;animation:up .3s ease}
+  @media(min-width:700px){.sheet{border-radius:24px}}
+  @keyframes up{from{transform:translateY(40px);opacity:0}}
+  .sheet h3{font-family:var(--hand);font-weight:900;font-size:34px;letter-spacing:-.02em;line-height:1;color:#fff}
+  .sheet h3 em{font-style:italic;color:var(--yellow)}
+  .sheet p{font-size:17px;line-height:1.55;color:rgba(255,255,255,.82);margin-top:12px}
+  .sheet ul{list-style:none;margin-top:14px;display:grid;gap:10px}
+  .sheet li{font-size:17px;font-weight:700;padding-left:26px;position:relative}
+  .sheet li::before{content:"+";position:absolute;left:0;top:-3px;font-family:var(--sans);font-weight:700;font-size:20px;color:var(--yellow)}
+  .sheet .q{font-family:var(--sans);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:15px;color:#fff;margin-top:20px;line-height:1.1}
+  .sheet .q + p{margin-top:6px}
+  .sheet h3 + .q{margin-top:14px}
+  .close{float:right;font-family:var(--sans);font-size:28px;line-height:1;color:#fff;margin:-6px -4px 0 10px}
+
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div class="ticker" aria-hidden="true"><div>
+  <span>Oferta exclusiva</span><span>★</span><span>Garanta agora</span><span>★</span><span>Válido por 7 dias</span><span>★</span><span>Feche hoje</span><span>★</span>
+  <span>Oferta exclusiva</span><span>★</span><span>Garanta agora</span><span>★</span><span>Válido por 7 dias</span><span>★</span><span>Feche hoje</span><span>★</span>
+</div></div>
+
+<header><a class="brand" href="https://alltoral.netlify.app" target="_blank" rel="noopener">ALL<br>TO<br>RAL</a></header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <h1 class="hand"><span>Pra você começar</span><span>hoje com a <em>gente.</em></span></h1>
+      <div class="art">
+        <picture>
+          <source media="(min-width:820px)" srcset="img/hero-desktop.webp" width="1376" height="768">
+          <img src="img/hero-celular.webp" width="896" height="1200" alt="ALL START, oferta exclusiva">
+        </picture>
+        <div class="price"><span class="from">de <s>R$ 1.800</s></span><span class="num">1.300</span></div>
+      </div>
+      <div class="pack">Marca <i>+</i> Página <i>+</i> Conteúdo</div>
+      <a class="cta js-whats" href="#" target="_blank" rel="noopener">Garanta agora</a>
+      <span class="valid">VÁLIDO POR <b>7 DIAS</b></span>
+    </div>
+  </section>
+
+  <!-- ENTREGAS -->
+  <section class="center">
+    <div class="wrap">
+      <h2 class="hand s-title reveal">3 <em>entregas</em></h2>
+      <div class="panel items reveal">
+        <div class="item"><div class="n">01</div><div class="w hand">Marca</div><div class="d">guia visual</div><button class="more" data-open="m-marca">Saber mais</button></div>
+        <div class="item"><div class="n">02</div><div class="w hand">Página</div><div class="d">link na bio</div><button class="more" data-open="m-pagina">Saber mais</button></div>
+        <div class="item"><div class="n">03</div><div class="w hand">Conteúdo</div><div class="d">3 posts prontos</div><button class="more" data-open="m-conteudo">Saber mais</button></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRAZO E CRÉDITO -->
+  <section class="center" style="padding-top:0">
+    <div class="wrap">
+      <div class="panel facts reveal">
+        <div class="fact"><div class="big">2</div><div class="cap">semanas<br>de entrega</div></div>
+        <div class="fact"><div class="big">30</div><div class="cap">dias de<br>crédito</div></div>
+        <button class="more facts-more" data-open="m-como">Como funciona</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL -->
+  <section class="final">
+    <div class="wrap">
+      <div class="marquee">
+        <img src="img/painel-neon.webp" width="1100" height="614" alt="" loading="lazy">
+        <div class="m-txt">
+          <span class="hand m-big">Feche <em>agora.</em></span>
+          <span class="m-sub">ALL START POR <b>R$ 1.300</b></span>
+        </div>
+      </div>
+      <a class="cta js-whats" href="#" target="_blank" rel="noopener">Quero começar</a>
+      <button class="faq-btn" data-open="m-faq">Dúvidas?</button>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">ALL TORAL · Estúdio criativo · @all.toral</div></footer>
+
+<div class="sticky" id="sticky">
+  <div class="info">ALL START<b>1.300</b></div>
+  <a class="js-whats" href="#" target="_blank" rel="noopener">Garanta</a>
+</div>
+
+<!-- POP-UP -->
+<div class="pop-bg" id="popbg"></div>
+<div class="pop" id="pop" role="dialog" aria-label="Oferta exclusiva">
+  <button class="x" id="popx" aria-label="Fechar">×</button>
+  <img class="seal" src="img/selo-oferta.webp" width="720" height="720" alt="Oferta exclusiva" loading="lazy">
+  <a class="cta js-whats" href="#" target="_blank" rel="noopener">Feche agora por 1.300</a>
+</div>
+
+<!-- JANELA -->
+<div class="modal" id="modal"><div class="sheet" id="sheet"></div></div>
+
+<template id="m-marca">
+  <h3>Guia visual da <em>marca</em></h3>
+  <p>O direcionamento da sua marca. Se hoje você só tem a logo, a gente monta o resto em volta dela.</p>
+  <ul><li>Paleta de cores oficial</li><li>Fonte de apoio para usar com a logo</li><li>Orientações de uso</li></ul>
+</template>
+<template id="m-pagina">
+  <h3>Página de <em>links</em></h3>
+  <p>A página que vai na bio do Instagram, estilo Linktree, mas com a identidade da sua marca.</p>
+  <ul><li>Contatos e WhatsApp em um toque</li><li>Produtos e serviços em destaque</li><li>Redes sociais e links importantes</li></ul>
+</template>
+<template id="m-conteudo">
+  <h3>3 conteúdos <em>prontos</em></h3>
+  <p>Três peças para o seu perfil, pensadas a partir de pesquisa e do que está em alta no seu mercado.</p>
+  <ul><li>Post estático, carrossel ou vídeo</li><li>Legenda inclusa</li><li>Tudo já na nova identidade</li></ul>
+</template>
+<template id="m-como">
+  <h3>Como <em>funciona</em></h3>
+  <ul><li>Conversa inicial sobre o seu negócio</li><li>Guia visual para você aprovar</li><li>Página de links e 3 conteúdos</li><li>Entrega com reunião de apresentação</li></ul>
+  <p>Tudo pronto em cerca de 2 semanas após a conversa inicial.</p>
+  <div class="q">O valor vira crédito</div>
+  <p>Gostou e quer seguir com o projeto completo? Contratando em até 30 dias após a entrega, os R$ 1.300 do ALL START são abatidos do valor do projeto. Você não paga duas vezes.</p>
+</template>
+<template id="m-faq">
+  <h3><em>Dúvidas</em></h3>
+  <div class="q">Minha logo vai ser alterada?</div><p>Não. O guia visual parte da logo que você já tem.</p>
+  <div class="q">E se eu não tiver logo?</div><p>Fale com a gente antes de fechar que te indicamos o melhor caminho.</p>
+  <div class="q">Posso escolher o formato dos conteúdos?</div><p>Pode. Cada um pode ser post estático, carrossel ou vídeo.</p>
+  <div class="q">A página fica com meu domínio?</div><p>Ela é entregue no ar com um link pronto para a bio. Para domínio próprio, a gente te orienta.</p>
+  <div class="q">Como funciona o crédito?</div><p>Contratando um projeto completo em até 30 dias após a entrega, o valor do ALL START é descontado.</p>
+</template>
+
+<script>
+  /* Troque pelo número do WhatsApp do ALL TORAL (só números, com 55 e DDD). */
+  const WHATSAPP = '5511972810526';
+  const link = 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent('Olá! Quero fechar o ALL START por R$ 1.300.');
+  document.querySelectorAll('.js-whats').forEach(a => a.href = link);
+
+  const modal = document.getElementById('modal'), sheet = document.getElementById('sheet');
+  function openModal(id){
+    sheet.innerHTML = '<button class="close" aria-label="Fechar">×</button>' + document.getElementById(id).innerHTML;
+    modal.classList.add('open');
+    sheet.querySelector('.close').onclick = closeModal;
+  }
+  function closeModal(){ modal.classList.remove('open'); }
+  document.querySelectorAll('[data-open]').forEach(b => b.onclick = () => openModal(b.dataset.open));
+  modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+
+  /* pop-up: uma vez por visita, depois de 5 segundos */
+  const pop = document.getElementById('pop'), popbg = document.getElementById('popbg');
+  function hidePop(){ pop.classList.remove('show'); popbg.classList.remove('show'); }
+  document.getElementById('popx').onclick = hidePop;
+  popbg.onclick = hidePop;
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') { hidePop(); closeModal(); } });
+  let seen = false;
+  try { seen = sessionStorage.getItem('allstart-pop') === '1'; } catch(e) {}
+  if (!seen) setTimeout(() => {
+    if (modal.classList.contains('open')) return;
+    pop.classList.add('show'); popbg.classList.add('show');
+    try { sessionStorage.setItem('allstart-pop','1'); } catch(e) {}
+  }, 5000);
+
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  const sticky = document.getElementById('sticky');
+  new IntersectionObserver(([e]) => sticky.classList.toggle('show', !e.isIntersecting && e.boundingClientRect.top < 0))
+    .observe(document.querySelector('.hero .cta'));
+</script>
+</body>
+</html>
